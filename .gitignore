@@ -1,1 +1,8 @@
+### Development
 .vscode
+
+### Credential
+.env
+
+### Data
+stock_data

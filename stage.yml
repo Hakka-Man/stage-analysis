@@ -6,3 +6,6 @@ dependencies:
   - ipykernel
   - requests
   - pandas
+  - tabulate
+  - python-dotenv
+prefix: /home/exitialium/miniconda3/envs/stage

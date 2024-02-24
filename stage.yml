@@ -11,6 +11,6 @@ dependencies:
   - python-dotenv
   - matplotlib
   - html5lib
-  - pipS
+  - pip:
     - yahoo_fin
     - requests_html

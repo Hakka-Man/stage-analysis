@@ -10,4 +10,7 @@ dependencies:
   - tabulate
   - python-dotenv
   - matplotlib
-prefix: /home/wilson3124/miniconda3/envs/stage
+  - html5lib
+  - pipS
+    - yahoo_fin
+    - requests_html

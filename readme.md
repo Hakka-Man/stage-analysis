@@ -1,4 +1,4 @@
 ### Update yml
 ```
-conda env update --file stage.yml --prune
+conda env export --from-history --name stage > stage.yml
 ```

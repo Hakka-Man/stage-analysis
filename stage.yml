@@ -8,4 +8,8 @@ dependencies:
   - pandas
   - tabulate
   - python-dotenv
+  - html5lib
+  - pip
+    - yahoo_fin
+    - requests_html
 prefix: /home/exitialium/miniconda3/envs/stage

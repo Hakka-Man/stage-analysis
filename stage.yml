@@ -1,11 +1,13 @@
 name: stage
 channels:
+  - conda-forge
   - defaults
 dependencies:
-  - python=3.9
   - ipykernel
-  - requests
   - pandas
+  - requests
+  - python=3.9
   - tabulate
   - python-dotenv
-prefix: /home/exitialium/miniconda3/envs/stage
+  - matplotlib
+prefix: /home/wilson3124/miniconda3/envs/stage

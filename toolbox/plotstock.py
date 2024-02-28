@@ -11,8 +11,11 @@ fyh_color = "orange"
 
 bar_width = 0.8
 stick_width = 0.1
-fig_size = (15, 10)
+fig_size = (10, 1)
 line_width = 2
+
+width = [0.8]*104
+
 
 images_folder = "../stock_image"
 create_dir_if_not_exist(images_folder)
@@ -23,9 +26,11 @@ def plotstock(df: pd.DataFrame, output_plot_dir: str):
     up = df[df.close >= df.open]
     down = df[df.close < df.open]
 
-    plt.figure(figsize=fig_size, dpi=1000)
+    plt.figure(figsize=fig_size, dpi=80)
     plt.style.use('default')
     figure, axis = plt.subplots(2, height_ratios=[3,1])
+    axis[0].margins(x=0.0, y=0.1)
+    axis[1].margins(x=0.0, y=0.1)
 
     # Draw the price history
     axis[0].bar(up.index, up.close-up.open, bar_width, bottom=up.open, color=bull_color) 
@@ -43,8 +48,8 @@ def plotstock(df: pd.DataFrame, output_plot_dir: str):
     axis[0].axes.get_yaxis().set_visible(False)
 
     # Draw the volume
-    print(df.index)
-    axis[1].bar(df.index, df["volume"].values, width=bar_width)
+    # print(df["volume"].values)
+    axis[1].bar(df.index, df["volume"].values, width=width)
     
     axis[1].axes.get_xaxis().set_visible(False)
     axis[1].axes.get_yaxis().set_visible(False)

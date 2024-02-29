@@ -6,6 +6,9 @@
 
 ### Data
 stock_data
+stock_image
+*.pth
+
 
 ### Pycache
 __pycache__

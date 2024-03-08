@@ -48,6 +48,3 @@ class StockDataset(Dataset):
         #     mask = augmentations["mask"]
 
         return stock_img, stock_volume_img, stage
-    
-
-if __name__ == "__main__":

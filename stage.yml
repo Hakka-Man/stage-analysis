@@ -1,16 +1,18 @@
 name: stage
 channels:
-  - conda-forge
   - defaults
 dependencies:
-  - ipykernel
-  - pandas
-  - requests
   - python=3.9
+  - ipykernel
+  - requests
+  - pandas
   - tabulate
   - python-dotenv
-  - matplotlib
   - html5lib
+  - matplotlib
+  - pytorch
+  - torchvision
+  - scikit-learn
   - pip:
     - yahoo_fin
     - requests_html

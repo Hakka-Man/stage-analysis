@@ -84,7 +84,6 @@ def plotstock(df: pd.DataFrame, output_plot_dir: str):
 
     plt.gcf().set_facecolor('black')
     plt.savefig(os.path.join(images_folder, f"{output_plot_dir}.png"), bbox_inches='tight', pad_inches=0, dpi=100)
-    plt.show()
     plt.close('all')
 
     # plt.figure(figsize=fig_size)

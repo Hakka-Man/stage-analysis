@@ -26,9 +26,10 @@ def plotstock(df: pd.DataFrame, output_plot_dir: str):
     up = df[df.close >= df.open]
     down = df[df.close < df.open]
 
+    plt.style.use('dark_background')
     plt.figure(figsize=fig_size, dpi=80)
-    plt.style.use('default')
     figure, axis = plt.subplots(2, height_ratios=[3,1])
+
     axis[0].margins(x=0.0, y=0.1)
     axis[1].margins(x=0.0, y=0.1)
 
@@ -81,8 +82,9 @@ def plotstock(df: pd.DataFrame, output_plot_dir: str):
     # ax2.set_xticks([])
     # ax2.set_yticks([])
 
-    plt.gcf().set_facecolor('white')
+    plt.gcf().set_facecolor('black')
     plt.savefig(os.path.join(images_folder, f"{output_plot_dir}.png"), bbox_inches='tight', pad_inches=0, dpi=100)
+    plt.show()
     plt.close('all')
 
     # plt.figure(figsize=fig_size)

@@ -9,6 +9,7 @@ stock_data
 stock_image
 *.pth
 train_images
+train_data
 
 ### pycache
 __pycache__
